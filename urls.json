@@ -12,13 +12,13 @@
                 "name": "Chieru-Translator",
                 "img": "chieru.png",
                 "url": "https://apps.h1msk.cc/Chieru-Translator",
-                "enabled": false
+                "enabled": true
             },
             {
                 "name": "Mini-Dungeon",
                 "font": "gamepad",
-                "url": "https://apps.h1msk.cc/Chieru-Translator",
-                "enabled": false
+                "url": "https://apps.h1msk.cc/Mini-Dungeon/",
+                "enabled": true
             }
         ]
     }, {
@@ -27,7 +27,7 @@
             {
                 "name":"Github",
                 "font":"github-alt",
-                "url": "https://github.com/H1KHC",
+                "url": "https://github.com/H1MSK",
                 "enabled": true
             }
         ]
