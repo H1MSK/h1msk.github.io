@@ -50,7 +50,7 @@
                     onJsonLoadError();
                 }
             }
-        }
+        };
         jsonhttps.open("GET", "urls.json", true);
         jsonhttps.send();
     }

@@ -70,7 +70,7 @@ body {
 
 .tooltiptext {
     pointer-events: none;
-    transform: translate(-3rem, -100%);
+    transform: translate(-3.7rem, -100%);
     position: absolute;
     z-index: 1;
     font-weight: bolder;
