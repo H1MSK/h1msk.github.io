@@ -1,0 +1,185 @@
+
+body,
+div,
+h1,
+h2,
+span,
+i {
+    text-align: center;
+    align-self: center;
+}
+
+body {
+    background: url(bg.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+#container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20rem;
+    opacity: 0.9;
+    background: rgba(255,255,255,0.5);
+    border-radius: 5rem;
+    overflow: hidden;
+    transition: padding-bottom 0.5s;
+}
+
+#avatar {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 5rem;
+    box-shadow: #449 0 0 0.5rem;
+    margin: 4rem;
+}
+
+#logo,
+#subtitle {
+    display: block;
+    margin: auto;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+    text-shadow: 0 1px 0.25rem rgba(0, 0, 0, 0.3);
+    width: fit-content;
+}
+
+#logo {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.2rem;
+    background: #2d40e3;
+    padding: 0.2rem 0.4rem;
+    border-radius: 0.4rem;
+}
+
+#subtitle {
+    font-size: 1rem;
+    line-height: 1rem;
+    letter-spacing: 0.1rem;
+    background: rgba(1, 1, 1, 0.15);
+    border-radius: 0.2rem;
+}
+
+#subtitle-wrap {
+    margin-top: 1rem;
+}
+
+.tooltiptext {
+    pointer-events: none;
+    transform: translate(-3rem, -100%);
+    position: absolute;
+    z-index: 1;
+    font-weight: bolder;
+    color: white;
+    opacity: 0;
+    padding: 0.2rem;
+    background: rgba(127,127,127,0.4);
+}
+
+.tooltip:hover .tooltiptext {
+    opacity: 1;
+}
+
+a span {
+    border-radius: 0.5rem;
+    transition: opacity 0.2s;
+}
+a:hover span {
+    background: rgba(127,127,127,0.4);
+}
+i.fa {
+    color: #2d40e3;
+}
+.error i.fa {
+    color: #777799;
+}
+a.error:hover span {
+    background: rgba(255,128,128,0.4);
+}
+#busuanzi_container_site_pv {
+    color: rgba(255,255,255,0.1);
+    position: fixed;
+    bottom: 1.25rem;
+    right: 1.25rem;
+    cursor: default;
+}
+
+#info {
+    max-height: 26rem;
+    overflow: hidden;
+    transition: max-height 0.5s;
+    border-bottom: 4px solid rgba(127, 127, 127, 0.3);
+}
+
+.expanded #info {
+    max-height: 0px;
+}
+
+#expand-button {
+    margin: 1rem;
+    transition: transform 0.5s;
+    margin: 0;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+#expand-button:not(.loading) .load-img, #expand-button:not(.error) .error-img, #expand-button:not(.loaded) .arrow-img {
+    display: none;
+}
+
+#expand-button.error {
+    color: red;
+}
+
+.expanded #expand-button {
+    transform: rotate(-180deg);
+}
+
+#links {
+    overflow: hidden;
+    max-height: 0px;
+    transition: max-height 0.5s;
+    border-top: 4px solid rgba(127, 127, 127, 0.3);
+}
+
+.expanded #links {
+    max-height: 24rem;
+}
+
+.link-title {
+    font-size: 1.2rem;
+    color: white;
+    margin-top: 1rem;
+    background: rgba(1, 1, 1, 0.15);
+    border-radius: 0.2rem;
+    margin: 1rem 2rem 0.2rem 2rem;
+    padding: 0.2rem;
+}
+
+#container.expanded {
+    padding-bottom: 3rem;
+}
+
+.link-entry-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.link-entry {
+    width: 3rem;
+    height: 3rem;
+    font-size: 2.8rem;
+    border: 0.4rem solid #2d40e3;
+    border-radius: 0.6rem;
+}
+
+a.error .link-entry {
+    border: 0.4rem solid #FF7F7F;
+    color: #FF7F7F;
+    opacity: 0.6;
+}
